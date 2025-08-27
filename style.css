@@ -70,7 +70,7 @@ section {
 
 .navbar a:hover,
 .navbar a.active{
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 #menu-icon {
@@ -248,7 +248,9 @@ span {
 }
 
 .portfolio-container .portfolio-box {
-    position: relative;
+    position:relative;
+    height: 20vw;
+    width: 25vw;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
@@ -287,7 +289,7 @@ span {
 }
 
 .portfolio-layer h4 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .portfolio-layer p {
@@ -379,9 +381,10 @@ span {
 }
 
 .footer-iconTop a i {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     color: var(--snd-bg-color);
 }
+
 
 /* Break Point */
 @media (max-width: 1200px) {
@@ -415,6 +418,29 @@ span {
     #menu-icon {
         display: block;
     }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgb(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
     .home {
         flex-direction: column;
     }
